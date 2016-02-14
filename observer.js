@@ -1,3 +1,10 @@
+/**
+ * Subject:           maintain list of observers
+ * Observer:          provides a update interface for objects and notification
+ * ConcreteSubject:   Broadcast notification;
+ * ConcteteObserver:  stores a reference to the concreteSubject
+ */
+
 // subject prototype
 function ObserverList () {
   this.ObserverList = [];
@@ -104,4 +111,4 @@ function addNewObserver() {
   // add new observer to list
   controlChecbox.addObserver( check );
   container.appendChild( check );
-}
+};
