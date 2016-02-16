@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Decoupling application using Ben Alman's pub/sub import</title>
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js" charset="utf-8"></script>
+  <script src="libs/ba-tiny-pubsub.js" charset="utf-8"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" charset="utf-8"></script>
+
+</head>
+<body>
+
+
+  <script id="userTemplate" type=text/html>
+    <li><%= name %></li>
+  </script>
+
+  <script id="ratingsTemplate" type="text/html">
+    <li><strong><%= title %></strong> was rated <%= rating %></li>
+  </script>
+
+  <div id="container">
+    <div class="sampleForm">
+      <p>
+        <label for="twitter_handle">Twitter handle:</label>
+        <input type="text" id="twitter_handle">
+      </p>
+      <p>
+        <label for="movie_seen">Name a movie you've seen this year:</label>
+        <input type="text" id="movie_seen">
+      </p>
+      <p>
+        <label for="">Rate movie you saw:</label>
+        <select name="movie_rating" id="movie_rating">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5" selected>5</option>
+        </select>
+      </p>
+      <p>
+        <button id="add">submit rating</button>
+      </p>
+    </div>
+
+    <div class="summaryTable">
+      <div id="users"><h3>Recent users</h3></div>
+      <div id="ratings"><h3>Recent movie rated</h3></div>
+    </div>
+  </div>
+
+<script src="publish-subscribe (Ben Alman lib for jQuery).js" charset="utf-8"></script>
+</body>
+</html>
