@@ -1,0 +1,30 @@
+{
+  "name": "js-patterns",
+  "version": "1.0.0",
+  "description": "Addy Osmani pattern books samples",
+  "main": "about objects.js",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "underscore": "^1.8.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomskJD/JS-Patterns.git"
+  },
+  "keywords": [
+    "js",
+    "js",
+    "patterns"
+  ],
+  "author": "atomskjd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AtomskJD/JS-Patterns/issues"
+  },
+  "homepage": "https://github.com/AtomskJD/JS-Patterns#readme"
+}
