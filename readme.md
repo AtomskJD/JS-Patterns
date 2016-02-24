@@ -8,10 +8,11 @@ Patterns list
 * Module Pattern
 * Revealing Module Pattern
 * Singleton Pattern
-* Observer Pattern
+* Observer Pattern (and pub/sub pattern)
 * Mediator Pattern
 * Prototype Pattern
 * Command Pattern
 * Facade Pattern
 * Factory Pattern
 * Mixin Pattern
+* Decorator Pattern
