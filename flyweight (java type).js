@@ -15,6 +15,7 @@ Function.prototype.implementsFor = function ( parentClassObject ) {
 };
 
 
+
 // FW object
 var CoffeeOrder = {
   // interfaces
@@ -22,12 +23,14 @@ var CoffeeOrder = {
   getFlavor:    function () {}
 };
 
+
+
 // ConcreteFW implements CoffeeOrder
 function CoffeeFlavor ( newFlavor ) {
   var flavor = newFlavor;
 
-// if interface has been implemented implement feature
-// override method
+  // if interface has been implemented implement feature
+  // override method
   if ( typeof this.getFlavor == 'function' ) {
     this.getFlavor = function () {
       return flavor;
@@ -54,6 +57,10 @@ function CoffeeOrderContext (tableNumber) {
   };
 }
 
+
+
+
+// flavor FACTORY
 function CoffeeFlavorFactory () {
   var flavors = {},
       length = 0;
@@ -79,10 +86,10 @@ function CoffeeFlavorFactory () {
 
 // USAGES
 function testFlyweight () {
-  var flavors = new CoffeeFlavor(),
-  tables = new CoffeeOrderContext(),
-  ordersMade = 0,
-  flavorFactory;
+  var flavors     = new CoffeeFlavor(),
+      tables      = new CoffeeOrderContext(),
+      ordersMade  = 0,
+      flavorFactory;
 
   function takeOrders ( flavorIn, table ) {
     flavors[ordersMade] = flavorFactory.getCoffeeFlavor( flavorIn );
